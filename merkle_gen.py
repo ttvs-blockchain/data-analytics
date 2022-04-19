@@ -20,9 +20,9 @@ processed_data = process_data(data)
 print(processed_data)
 
 fig = plt.figure()
-x_axis_values = ['2^5', '2^10', '2^15', '2^20', '2^25']
+x_axis_values = ['$\mathregular{2^5}$', '2^10', '2^15', '2^20', '2^25']
 y_axis_values = processed_data
-plt.bar(x_axis_values, y_axis_values)
+plt.plot(x_axis_values, y_axis_values, '-rD')
 plt.title('Merkle Tree Generation Time')
 plt.xlabel('Test Size')
 plt.ylabel('Time(ns) in log2')
